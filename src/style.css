@@ -1,15 +1,15 @@
-*, ::before, ::after {
+/* *, ::before, ::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+} */
 
 body {
     font-family: 'Poppins', sans-serif;
 }
 
 section {
-    height: 500px;
+    /* height: 500px; */
     background: white;
 }
 
@@ -45,6 +45,10 @@ li {
 h1 {
     font-size: 90px;
     margin: 0;
+}
+
+h2 {
+    font-size: 70px;
 }
 
 p {
@@ -98,4 +102,39 @@ p {
 .logo {
     height: 80px;
     margin: 30px;
+}
+
+.sub-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 80px;
+}
+
+.sub-section-alternative {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.headshot {
+    width: 300px;
+    border-radius: 50%;
+
+}
+
+.headshot-container {
+    display: flex;
+    align-items: center;
+}
+
+.project-card {
+    width: 300px;
+    height: 500px;
+    box-shadow:  5px 5px 20px rgb(172, 172, 172);
+}
+
+.project-container {
+    display: flex;
+    justify-content: space-around;
 }
