@@ -11,16 +11,20 @@ body {
 
 section {
     background: white;
+
 }
 
 footer {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    height:500px;
+    height:80vh;
     background: #2b2c38;
     color: white;
     text-align: center;
     padding: 30px;
+    margin-top: 80px;
     width: 100vw;
 }
 
@@ -30,7 +34,7 @@ nav {
 }
 
 ul {
-    width: 500px;
+    width: 700px;
     display: flex;
     justify-content: space-around;
     list-style-type: none;
@@ -60,10 +64,6 @@ p {
     font-weight: 300;
 }
 
-/* .information {
-    min-width: 100px;
-} */
-
 .hero {
     height: 100vh;
     background: #1c1d25;
@@ -72,6 +72,10 @@ p {
 }
 
 .subtext {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 20px;
+    margin-right: 20px;
     font-size: 15px;
     font-weight: 300;
 }
@@ -137,9 +141,12 @@ p {
 
 .sub-section-alternative {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     text-align: center;
     margin-bottom: 80px;
+    padding-left:70px;
+
 }
 
 .headshot {
@@ -164,6 +171,7 @@ p {
     height: 500px;
     box-shadow:  5px 5px 20px rgb(172, 172, 172);
     margin: 10px;
+    border-radius: 10px;
 }
 
 .project-card h3 {
@@ -179,7 +187,12 @@ p {
 .project-image {
     margin-top: 25px;
     width: 250px;
-    border-radius: 125px
+    border-radius: 10px;
+
+}
+.project-image:hover {
+    transition: all 200ms ease-in-out;
+    transform: scale(1.05);
 }
 
 hr {
@@ -189,7 +202,7 @@ hr {
 
 .project-link {
     text-decoration: none;
-    color: #ef744b;
+    color: #2b2c38;
 }
 
 a {
@@ -204,7 +217,11 @@ a {
     outline:0;
 }
 
-@media only screen and (max-width: 1000px) {
+.narrow {
+    display: none;
+}
+
+@media only screen and (max-width: 1080px) {
     .hamburger {
         display: block;
         border: 0;
@@ -262,6 +279,14 @@ a {
         margin-left: 5px;
         margin-right: 5px;
     }
+
+    .wide {
+        display: none;
+    }
+
+    .narrow {
+        display: flex;
+    }
 }
 
 .contact-form-container {
@@ -271,7 +296,7 @@ a {
     border-radius:8px;
     padding: 10px;
     width: 500px;
-    min-width: 300px;
+    /* min-width: 300px; */
 }
 #contact-form {
     display: flex;
@@ -289,15 +314,19 @@ a {
     font-size: 20px;
     font-family: 'Poppins', sans-serif;
     border: 1px solid #2b2c38;
-
 }
 
 .message{
     font-family: 'Poppins', sans-serif;
-    margin:1px;
+    margin:5px;
     height: 200px;
     width: 400px;
     border-radius: 5px;
     font-size: 20px;
     padding: 10px;
 }
+
+#certifications {
+    margin-bottom: 30px;
+}
+
